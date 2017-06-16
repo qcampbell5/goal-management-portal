@@ -1,6 +1,5 @@
 
 html, body {
-
 }
 
 /*Main Wrapper*/
@@ -23,7 +22,7 @@ nav ul {
 .main-nav {
   float            : left;
 
-  height           : auto;
+  height           : 100%;
   width            : 100px;
   padding          : 0;
 
@@ -60,7 +59,7 @@ nav ul {
   position         : relative;
   float            : left;
 
-  height           : 600px;
+  height           : 100%;
   width            : 0;
   margin-left      : 0;
 
@@ -97,13 +96,15 @@ nav ul {
 }
 
 .daily-to-do {
-  display : none;
 }
 
 /* Workout Panels */
 .movement-tile {
   height           : 190px;
+  padding-top      : 40px;
+
   background-color : #f1faff;
+  border           : 1px dotted yellow;
 }
 
 .movement-tile h3 {
