@@ -1,5 +1,16 @@
 // Slide Panels
+
+
+
+$('.slide-nav').css({'height':($('.main-nav').height()+'px')});
+
+if($('.workout').css('width') == '250px') {
+	$('.content-wrapper').css({'marginLeft': '250px'});
+};
+
+
 $(document).ready(function() {
+
 	if ($('a:contains("Daily To Do")').hasClass('active')){
 		$('a:contains("Daily To Do")').ready(function() { 
 		    $('.daily-to-do').animate({
