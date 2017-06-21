@@ -19,6 +19,7 @@ body {
 }
 
 .content-wrapper {
+  min-height : 500px;
 }
 
 /*Navs*/
@@ -73,9 +74,6 @@ nav ul {
   width            : 0;
 
   background-color : #2b2b2b;
-/*  position: absolute;
-  left: 100px;
-  top:0;*/
 }
 
 .slide-nav h2 {
@@ -115,6 +113,7 @@ nav ul {
   height           : 190px;
   padding-top      : 40px;
 
+  opacity          : 0;
   background-color : #f1faff;
   border           : 1px dotted yellow;
 }
