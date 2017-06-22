@@ -2,7 +2,7 @@
 html, body {
 }
 
-/*Main Styles*/
+/* Main Styles */
 body {
   padding          : 20px 40px 40px 40px;
   background-color : #00a0ff;
@@ -13,7 +13,7 @@ body {
 
   overflow         : hidden;
   width            : 100%;
-  padding-left     : 100px;
+  padding          : 0;
 
   background-color : #fff;
 }
@@ -22,20 +22,20 @@ body {
   min-height : 500px;
 }
 
-/*Navs*/
+/* Navs */
 nav ul {
   padding    : 0;
   list-style : none;
 }
 
-/*Main Nav*/
+/* Main Nav */
 .main-nav {
   position         : absolute;
   top              : 0;
   left             : 0;
 
-  height           : 100%;
-  width            : 100px;
+  height           : 100px;
+  width            : 100%;
   padding          : 0;
 
   background-color : #404040;
@@ -51,9 +51,11 @@ nav ul {
 }
 
 .main-nav ul li a {
-  display    : block;
+  display    : inline-block;
+  float      : left;
 
   min-height : 100px;
+  width      : 100px;
   padding    : 20px 0;
 
   font-size  : 60%;
@@ -66,14 +68,34 @@ nav ul {
   text-decoration  : none;
 }
 
-/*Slide Navs*/
+/* Slide Nav */
 .slide-nav {
-  position         : relative;
-  float            : left;
+  position         : absolute;
+  top              : 100px;
 
-  width            : 0;
+  height           : 250px;
+  width            : 100%;
 
+  opacity          : 0;
   background-color : #2b2b2b;
+}
+
+.slide-nav-horiz {
+  top     : 100px;
+
+  height  : 250px;
+  width   : 100%;
+
+  opacity : 1;
+}
+
+.slide-nav-vert {
+  top     : 0;
+
+  height  : 100%;
+  width   : 250px;
+
+  opacity : 1;
 }
 
 .slide-nav h2 {
@@ -102,13 +124,14 @@ nav ul {
   color       : #8a8a8a;
 }
 
+.visible {
+  opacity: 1;
+}
+
+/* Workout Panel */
 .workout {
 }
 
-.daily-to-do {
-}
-
-/* Workout Panels */
 .movement-tile {
   height           : 190px;
   padding-top      : 40px;
@@ -123,3 +146,58 @@ nav ul {
   font-weight    : bold;
   text-transform : uppercase;
 }
+
+/* Daily To Do Panel */
+.daily-to-do {
+}
+
+/* Control Panel */
+.control-panel {
+  height : 80px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .wrapper {
+    padding : 0 0 0 100px;
+  }
+
+  .main-nav {
+    height  : 100%;
+    width   : 100px;
+    padding : 0;
+  }
+
+  .main-nav ul {
+  }
+
+  .main-nav ul li {
+  }
+
+  .main-nav ul li a {
+    display : block;
+    float   : none;
+
+    width   : auto;
+  }
+
+  .main-nav ul li a:hover {
+    background-color : #f06d06;
+    color            : #fff;
+    text-decoration  : none;
+  }
+
+  .slide-nav {
+    top    : 0;
+
+    height : 100%;
+    width  : 250px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
