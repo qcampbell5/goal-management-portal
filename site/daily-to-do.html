@@ -8,11 +8,10 @@
     <title>Goal Management Portal | Daily To Do</title>
   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link href="css/styles.css" rel="stylesheet">    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>       
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>   
     <script src="js/site.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,23 +28,32 @@
   
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="daily-to-do.html" class="active">Daily To Do</a></li>
-        <li><a href="workout.html">Workout</a></li>
+        <li>
+          <a href="index.html"><span class="glyphicon glyphicon-home"></span><br>Home</a>
+        </li>
+        <li>
+          <a href="daily-to-do.html" class="active"><span class="glyphicon glyphicon-calendar"></span><br>Daily To Do</a>
+        </li>
+        <li>
+          <a href="workout.html"><span class="glyphicon glyphicon-scale"></span><br>Workout</a>
+        </li>
         <li></li>
       </ul>
     </nav>
 
     <nav class="slide-nav daily-to-do">
-      <h2>Daily To Do</h2>
-      <ul>
-        <li>Sunday</li>
-        <li>Monday</li>
-        <li>Tuesday</li>
-        <li>Wednesday</li>
-        <li>Thursday</li>
-        <li>Friday</li>
-      </ul>
+
+      <div class="btn-group-vertical btn-block btn-group-vertical-slide">
+        <button type="button" class="btn btn-slide-heading btn-md btn-block">Weekly Tasks<span class="badge">5</span></button>
+        <button type="button" class="btn btn-slide btn-xs">Monday<span class="badge">5</span></button>
+        <button type="button" class="btn btn-slide btn-xs">Tuesday<span class="badge">5</span></button>
+        <button type="button" class="btn btn-slide btn-xs">Wednesday<span class="badge">5</span></button>
+        <button type="button" class="btn btn-slide btn-xs">Thursday<span class="badge">5</span></button>
+        <button type="button" class="btn btn-slide btn-xs">Friday<span class="badge">5</span></button>
+        <button type="button" class="btn btn-slide btn-xs">Saturday<span class="badge">5</span></button>
+        <button type="button" class="btn btn-slide btn-xs">Sunday<span class="badge">5</span></button>        
+      </div>
+
     </nav>  
 
     <nav class="slide-nav workout">
@@ -63,11 +71,22 @@
     <div class="content-wrapper container-fluid">  
 
       <div class="row">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac magna vitae tortor vestibulum dapibus vitae non purus. In gravida ultrices ligula, id sodales ligula tempus ut. Aenean elit augue, ultricies at hendrerit eu, scelerisque eget lorem. Maecenas elit sapien, tincidunt quis suscipit nec, consequat id turpis. Cras sit amet egestas magna. Aenean diam enim, gravida id mauris volutpat, euismod laoreet dolor. Nullam commodo metus feugiat odio consectetur, quis imperdiet quam feugiat.</p>
 
-        <p>Duis ac varius risus. Duis condimentum lacus tellus, at suscipit augue gravida non. Duis id imperdiet sem. Aenean id volutpat metus. Quisque semper eget nibh quis fermentum. Praesent placerat erat ac nisi aliquam, vitae eleifend risus eleifend. Duis at lorem justo. In aliquet mattis augue, sed tempus sem tristique vel. Duis lacus neque, condimentum sed venenatis sit amet, maximus venenatis sapien. Fusce eget mauris augue. Praesent accumsan ante id tellus fermentum, quis rhoncus mauris viverra. Nam eget tellus tincidunt, ornare ligula id, tempus augue. Morbi egestas id orci eu porta.</p>
+        <h2>Daily To Do</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac magna vitae tortor vestibulum dapibus vitae non purus. In gravida ultrices ligula, id sodales ligula tempus ut. Aenean elit augue, ultricies at hendrerit eu, scelerisque eget lorem. Maecenas elit </p>
 
-        <p>Duis urna diam, dignissim in magna ut, vestibulum ultrices augue. Aenean ac purus eu risus ultricies vulputate a nec nunc. Curabitur congue, purus vitae venenatis ultrices, dui diam tincidunt quam, nec auctor augue elit quis enim. Suspendisse fermentum dapibus dolor, nec egestas nisl sollicitudin vel. Phasellus sodales, lacus at cursus scelerisque, nibh ante accumsan odio, sed rutrum ante quam sit amet nisi. Vestibulum sit amet rhoncus orci. Phasellus scelerisque venenatis eros in commodo.</p>     
+      </div>
+
+      <div class="row">
+       <article class="action-tile col-sm-4">
+          <h3>Exercise</h3>
+        </article>
+        <article class="action-tile col-sm-4">
+          <h3>Exercise</h3>
+        </article>
+        <article class="action-tile col-sm-4">
+          <h3>Exercise</h3>
+        </article>              
       </div>
     
     </div>                       
