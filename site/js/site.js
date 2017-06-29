@@ -56,6 +56,7 @@ $(document).ready(function() {
 		}	
 	}// end horizontal slide nav function
 
+	// start vertical slide nav function
 	function slideNavVert() {
 		if ($('a:contains("Daily To Do")').hasClass('active')){		
 			if ($('.daily-to-do').hasClass('sn-h')) {
@@ -104,7 +105,7 @@ $(document).ready(function() {
 				actionTileFadeIn();			
 			}	
 		}	
-	}
+	}// end vertical slide nav function
 
 	if ($(window).width() < 992) {
 		slideNavHoriz();		

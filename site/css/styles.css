@@ -237,37 +237,57 @@ nav ul {
   margin-top    : 0;
   margin-bottom : 0;
 
-  font-size     : 120%;
+  font-size     : 130%;
   font-weight   : bold;
+  text-align: center;
 }
 
-.action-tile .panel {
-  min-height    : 220px;
+.action-tile .panel, .action-tile .inner-panel {
   margin-bottom : 0;
 }
 
+/* collapsable inner panels */
 .action-tile .panel-body {
   padding : 0;
 }
 
-.action-tile table {
-  margin-bottom : 0;
+.action-tile .inner-panel .panel {
+  border : none;
 }
 
-.action-tile table th {
-  cursor           : pointer;
-  background-color : #404040;
+.action-tile .inner-panel .panel-heading {
+  padding : 0;
+}
+
+.action-tile .inner-panel .panel-title a {
+  display          : block;
+
+  padding          : 10px 15px;
+
+  background-color : #2b2b2b;
   font-size        : 90%;
-  color            : #999;
-  text-align       : center;
+  color            : #fff;
+  text-decoration  : none;
 }
 
-.action-tile table th:hover {
-  background-color: #1a1a1a;
-  color: #fff;
+.action-tile .inner-panel .panel-title a.collapsed {
+  background-color : #404040; 
+  color            : #999;  
 }
 
-.action-tile table td {
+/* Icon when the collapsible content is shown */
+.action-tile .inner-panel .panel-title a:after {
+  font-family: "Glyphicons Halflings";
+  content: "\e114";
+  float: right;
+  margin-left: 15px;
+}
+/* Icon when the collapsible content is hidden */
+.action-tile .inner-panel .panel-title a.collapsed:after {
+  content: "\e080";
+}
+
+.action-tile .inner-panel ul {
   font-size : 80%;
 }
 
