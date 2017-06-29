@@ -7,7 +7,7 @@ html, body {
 
 /* Main Styles */
 body {
-  padding: 0;
+  padding          : 0;
   background-color : #00a0ff;
 }
 
@@ -27,12 +27,20 @@ body {
   padding-top : 100px;
 }
 
+.content-wrapper .row {
+  padding : 0 20px;
+}
+
+.content-wrapper .action-row {
+  padding : 0;
+}
+
 .cw-h {
   padding-top : 350px;
 }
 
 .cw-v {
-  padding-left : 270px;
+  padding-left : 265px;
 }
 
 /* Navs */
@@ -120,6 +128,10 @@ nav ul {
   color : #fff;
 }
 
+.btn-slide-heading:focus {
+  color : #fff;
+}
+
 .btn-slide {
   position         : relative;
 
@@ -132,7 +144,7 @@ nav ul {
 
 .btn-slide:hover {
   background-color : #999;
-  color            : #fff;
+  color            : #1a1a1a;
 }
 
 .btn-slide:focus {
@@ -140,15 +152,31 @@ nav ul {
 }
 
 .btn-slide-heading .badge {
-  position : absolute;
-  top      : 6px;
-  right    : 7px;
+  position         : absolute;
+  top              : 6px;
+  right            : 7px;
+
+  background-color : #fff;
+  color            : #1a1a1a;
 }
 
 .btn-slide .badge {
-  position : absolute;
-  top      : 5px;
-  right    : 9px;
+  position         : absolute;
+  top              : 5px;
+  right            : 9px;
+
+  background-color : #2b2b2b;
+  font-weight      : normal;
+  color            : #999;
+}
+
+.btn-slide:hover .badge {
+  background-color : #999;
+  color            : #1a1a1a;
+}
+
+.btn-slide:focus .badge {
+  color : #fff;
 }
 
 .sn-h {
@@ -199,27 +227,48 @@ nav ul {
   opacity : 1 !important;
 }
 
-/* Workout Panel */
-.workout {
-}
-
+/* Action Panel */
 .action-tile {
-  height           : 190px;
-  padding-top      : 40px;
-
-  opacity          : 0;
-  background-color : #f1faff;
-  border           : 1px dotted yellow;
+  padding : 10px;
+  opacity : 0;
 }
 
 .action-tile h3 {
-  font-size      : 80%;
-  font-weight    : bold;
-  text-transform : uppercase;
+  margin-top    : 0;
+  margin-bottom : 0;
+
+  font-size     : 120%;
+  font-weight   : bold;
 }
 
-/* Daily To Do Panel */
-.daily-to-do {
+.action-tile .panel {
+  min-height    : 220px;
+  margin-bottom : 0;
+}
+
+.action-tile .panel-body {
+  padding : 0;
+}
+
+.action-tile table {
+  margin-bottom : 0;
+}
+
+.action-tile table th {
+  cursor           : pointer;
+  background-color : #404040;
+  font-size        : 90%;
+  color            : #999;
+  text-align       : center;
+}
+
+.action-tile table th:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.action-tile table td {
+  font-size : 80%;
 }
 
 /* Control Panel */
@@ -229,16 +278,16 @@ nav ul {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
   body {
-    padding          : 20px;
-  } 
-
+    padding : 20px;
+  }
+  .content-wrapper .action-row {
+    padding : 0 10px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
   .wrapper {
     padding : 0 0 0 100px;
   }
