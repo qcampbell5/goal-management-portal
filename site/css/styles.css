@@ -278,7 +278,7 @@ nav ul {
 /* Icon when the collapsible content is shown */
 .action-tile .inner-panel .panel-title a:after {
   font-family: "Glyphicons Halflings";
-  content: "\e114";
+  content: "\e113";
   float: right;
   margin-left: 15px;
 }

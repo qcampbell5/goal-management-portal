@@ -107,6 +107,7 @@ $(document).ready(function() {
 		}	
 	}// end vertical slide nav function
 
+	// function calls for horizontal and vertical slide animations
 	if ($(window).width() < 992) {
 		slideNavHoriz();		
 	}
@@ -114,6 +115,7 @@ $(document).ready(function() {
 		slideNavVert();
 	} 
 
+	// begin window resize between horizontal and vertical
 	$(window).resize(function(){
 		if ($(window).width() < 992) {
 			$('.slide-nav').css('left', 0);			
@@ -151,6 +153,16 @@ $(document).ready(function() {
 				}						
 			} 	
 		} 
-	})
+	})// end window resize between horizontal and vertical
+
+	// collapse and expand inner panels buttons
+	$('.daily-to-do-cp .collapse-all').click(function(){
+		$('.inner-panel .panel-collapse.in')
+		.collapse('hide');
+	});
+	$('.daily-to-do-cp .expand-all').click(function(){
+		$('.inner-panel .panel-collapse:not(".in")')
+		.collapse('show');
+	});
 
 });
